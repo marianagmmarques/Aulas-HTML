@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body{
+            text-align: center;    
+        }
+        
+        input[type=text], textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+
+        input[type=email] {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #FDF5E6;
+          padding: 20px;
+        }
+        
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+        
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Contato</h2>
+        <p>Telefone e WhatsApp: 61 9 8455-4356</p>
+        <p>Quadra 302 Conjunto 3, lote 4 a 11 Loja 25 Condomínio Boulevard das Acácias Samambaia Sul, DF, 72300-635</p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.846077030141!2d-48.082697219537096!3d-15.880901395015378!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695070079166!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="nome">Nome</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Seu e-mail..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="assunto">Assunto</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="mensagem">Mensagem</label>
+            </div>
+            <div class="col-75">
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sobre.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Enviar">
+          </div>
+          </form>
+        </div>
+</body>
+</html>
